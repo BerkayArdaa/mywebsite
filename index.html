@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Berkay Arda Portfolio</title>
+<!-- link to fontawesome for inserting social media icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- link to css file -->
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar">
+<a href="#home" class="logo">Berkay Arda</a>
+<ul class="nav-links">
+<li><a href="#home">Home</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav><!-- Hero Section -->
+<section id="home" class="hero">
+<div class="hero-content">
+<h1>Computer Engineer</h1>
+<p>Creating Software Solutions - Machine Learning - Intuitive Design.</p>
+<p class="highlight">Experienced in Unity game development, ASP.NET platforms, and AI-powered threat detection systems.</p>
+<a href="mailto:berkayardaa@outlook.com?subject=Portfolio%20Contact&body=Hello%20Berkay," class="cta-button">Let's Connect ✉️</a>
+
+
+
+</div>
+<div class="hero-image">
+<img src="profile.jpg" alt="Profile" class="profile-img">
+</div>
+</section><!-- Skills Section -->
+
+<section id="skills" class="skills">
+  <h2>Technical Expertise</h2>
+  <div class="skills-grid">
+
+    <div class="skill-card">
+      <i class="fas fa-code"></i>
+      <h3>Programming Languages</h3>
+      <p>Java, C, C++, C#, Python, JavaScript, PHP</p>
+    </div>
+
+    <div class="skill-card">
+      <i class="fas fa-window-restore"></i>
+      <h3>Frontend Development</h3>
+      <p>HTML, CSS, Responsive Design, JavaScript</p>
+    </div>
+
+ <div class="skill-card">
+  <i class="fas fa-desktop"></i>
+  <h3>Desktop & Web Frameworks</h3>
+  <p>Visual Studio Code, Visual Studio, .NET Framework, ASP.NET MVC, Unity, MATLAB</p>
+</div>
+
+
+    <div class="skill-card">
+      <i class="fas fa-database"></i>
+      <h3>Database & Tools</h3>
+      <p>MySQL, Git, Microsoft Office</p>
+    </div>
+
+    <div class="skill-card">
+      <i class="fas fa-brain"></i>
+      <h3>AI & Machine Learning</h3>
+      <p>PyTorch, YOLOv8–v12, OpenCV, VideoMAE</p>
+    </div>
+
+   
+
+    <div class="skill-card">
+      <i class="fas fa-sitemap"></i>
+      <h3>Computer Science Fundamentals</h3>
+      <p>Data Structures & Algorithms, OOP Principles</p>
+    </div>
+
+  </div>
+</section>
+
+<section id="projects" class="projects">
+  <h2>All Projects</h2>
+<br><br>
+  <h3 class="category-heading">AI & Machine Learning</h3>
+  <div class="project-card" onclick="toggleProject(this)">
+    <h3>ShielDir: AI-Powered Threat Detection</h3>
+    <div class="project-info">
+      <p>This Team project focused on developing an intelligent surveillance system that leverages real-time weapon detection and human behavior analysis to improve public safety. My role involved training and evaluating object detection models (YOLOv8–v12) using custom-labeled CCTV datasets and implementing a VideoMAE-based architecture for suspicious behavior recognition. I integrated these models into a modular pipeline and built a mobile-friendly notification system with Firebase to deliver alerts instantly. The system aims to reduce response time during critical threats and support ethical, proactive security solutions.</p>
+      <a href="https://github.com/ahmetalpsamur/ShielDir" target="_blank">🔗 View on GitHub</a>
+      <br><br>
+      <div class="project-video">
+        <video controls>
+          <source src="videos/shieldir-demo.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="image-gallery">
+        <img src="images/PhoneShieldir.jpg" alt="Mobile UI of ShielDir">
+        <img src="images/posterShieldir.png" alt="ShielDir Academic Poster">
+        <img src="images/ShieldirTeam.jpg" alt="ShielDir Team Presentation">
+      </div>
+    </div>
+  </div>
+
+  <div class="project-card" onclick="toggleProject(this)">
+    <h3>Smart Wildfire Management</h3>
+    <div class="project-info">
+      <p>This interdisciplinary research project explores how artificial intelligence and bioengineering can be combined to create fire-resistant forest ecosystems. As part of a multidisciplinary team, I contributed to the development of an early-warning system that analyzes environmental and vegetation data to detect wildfire risks using Random Forest models.</p>
+      <p>We proposed a solution by integrating AI-based risk analysis with the use of genetically engineered tree species that exhibit fire-resilient properties, such as thicker bark and moisture-retentive foliage. Additionally, we designed a monitoring infrastructure using thermal cameras and drone surveillance to capture early danger signals, including heat, smoke, and unusual wildlife behavior.</p>
+      <a href="https://github.com/BerkayArdaa/Feng497-BioAi" target="_blank">🔗 View on GitHub</a>
+      <br><br>
+      <div class="image-gallery">
+        <img src="images/bio1.jpg" alt="AI-based Fire Detection Concept">
+        <img src="images/bio2.jpg" alt="Bioengineered Forest Visualization">
+      </div>
+    </div>
+  </div>
+<br><br>
+  <h3 class="category-heading">Software Applications</h3>
+  <div class="project-card" onclick="toggleProject(this)">
+    <h3>VirtualEvent Management System</h3>
+    <div class="project-info">
+      <p>Developed a comprehensive event scheduling and notification platform using C# (WinForms) and ASP.NET MVC, integrated with an SQL database. Implemented key features such as user registration, role-based access control (admin/staff/user), real-time event editing, and automated notification alerts. The platform was designed to enhance coordination, streamline communication, and improve user engagement in virtual event environments.</p>
+      <ul>
+        <li>👤 User registration with role-based access control (Admin, Staff, Participant)</li>
+        <li>📅 Event creation, editing, and scheduling</li>
+        <li>🔔 Real-time notifications for updated or canceled events</li>
+        <li>📈 Dynamic event tracking with filters and sorting</li>
+        <li>🗃️ Clean UI with easy-to-navigate event data</li>
+      </ul>
+      <p>The goal of this project was to streamline communication between participants and organizers, allowing for faster updates and better event visibility across platforms.</p>
+      <a href="https://github.com/BerkayArdaa/Virtual-Event-Application" target="_blank">🔗 View on GitHub</a>
+      <br><br>
+      <div class="image-gallery">
+        <img src="images/virtualEvent2.png" alt="Virtual Event Logo">
+        <img src="images/VirtualEvent.jpg" alt="Virtual Event Ekran Görüntüsü">
+      </div>
+    </div>
+  </div>
+
+  <div class="project-card" onclick="toggleProject(this)">
+    <h3>EasyAssign – Coding Assignment Evaluation Tool</h3>
+    <div class="project-info">
+      <p><strong>EasyAssign</strong> is a lightweight Windows application developed to help educators evaluate programming assignments more efficiently. It supports a wide variety of programming languages and provides a structured way to manage the assignment lifecycle from creation to grading.</p>
+      <ul>
+        <li>🔧 Project creation and language-specific configuration management</li>
+        <li>📁 Automatic ZIP file processing from student submissions</li>
+        <li>💻 Compilation and execution of source code</li>
+        <li>📊 Output comparison against expected results</li>
+        <li>🛠️ Robust error reporting for compilation or runtime issues</li>
+        <li>📋 Display of detailed results for each student</li>
+      </ul>
+      <p>EasyAssign is built with simplicity and productivity in mind, offering an installer with a desktop shortcut and minimal setup effort.</p>
+      <a href="https://github.com/BerkayArdaa/Feng497-BioAi" target="_blank">🔗 View on GitHub</a>
+    </div>
+  </div>
+<br><br>
+  <h3 class="category-heading">Computer Games</h3>
+  <div class="project-card" onclick="toggleProject(this)">
+    <h3>2D Adventure Game with Unity</h3>
+    <div class="project-info">
+      <p>During my internship at Teracity Software Technologies, I developed a complete 2D action-adventure game using Unity and C#. This project included core gameplay mechanics such as player movement, combat, inventory management, wave-based enemy spawning, and boss battles.</p>
+      <p>One of the highlights was integrating a dynamic weapon system that allows players to switch between sword and bow. The bow features projectile mechanics where arrows follow the mouse direction using Rigidbody2D physics. I also designed an interactive inventory system with slot-based item management, item pickups, drops, and use-case logic (e.g., potions that provide power-ups).</p>
+      <p>To enhance game flow, I added a scoring system, visual UI components using TextMesh Pro, and enemy AI logic including enemy movement, ranged attacks, and player tracking. Special care was taken to optimize performance and avoid memory issues by destroying unnecessary objects after a certain time. This project strengthened my practical knowledge in game development, C# scripting, and Unity’s component-based system.</p>
+      <div class="project-video">
+        <video controls muted>
+          <source src="videos/TeracityGameProject.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="image-gallery">
+        <img src="images/Teracityicon.png" alt="Game Screenshot">
+      </div>
+    </div>
+  </div>
+
+  <div class="project-card" onclick="toggleProject(this)">
+    <h3>Kormos – Supernatural Detective Adventure</h3>
+    <div class="project-info">
+      <p>Kormos is a 3D adventure game where players control a supernatural detective equipped with unique powers to solve a dark mystery. Built in Unity, the game combines action, puzzle-solving, and tactical combat across a mysterious map filled with dangerous enemies.</p>
+      <p>The detective character has special abilities, including <strong>Clone Summoning</strong>, where clones appear around a selected enemy and attack, and <strong>Time Manipulation</strong>, which slows time to allow more strategic attacks. The UI displays critical information such as health and ammo, and a dynamic crosshair system helps with ranged targeting.</p>
+      <p>Enemies include wandering <strong>Rats</strong>, which chase and attack the player in close range, and <strong>Priests</strong>, who patrol and launch magic projectiles from afar. At the end of the first level, players face the <strong>Rat King</strong>, a powerful boss that summons rats while dealing heavy damage.</p>
+      <p>All characters, animations, and visual assets were integrated using Unity's prefab system and the Unity Asset Store. This project emphasized real-time combat mechanics, animation triggers, enemy AI, and user-friendly UI design.</p>
+      <div class="project-video">
+        <video controls muted>
+          <source src="videos/kormosV.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<footer id="contact">
+  <p>Contact Platforms</p>
+  <div class="social-links">
+    <a href="https://github.com/BerkayArdaa" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="https://wa.me/905320534539" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    <a href="https://www.linkedin.com/in/berkay-arda" target="_blank"><i class="fab fa-linkedin"></i></a>
+  </div>
+</footer>
+
+<footer>
+<p>© 2024 CyberDev. All rights reserved.</p>
+
+</footer>
+
+
+    
+<!-- link to javascript file -->
+<script src="script.js"></script>
+<!-- Lightbox Modal -->
+<!-- Lightbox Modal -->
+<div id="lightbox" class="lightbox" onclick="closeLightbox(event)">
+  <span class="close-btn" onclick="closeLightbox(event)">&times;</span>
+  
+  <!-- Sol ok -->
+  <span class="nav-arrow prev-btn" onclick="changeImage(-1)">&#10094;</span>
+  
+  <img class="lightbox-content" id="lightbox-img">
+  
+  <!-- Sağ ok -->
+  <span class="nav-arrow next-btn" onclick="changeImage(1)">&#10095;</span>
+</div>
+
+</body>
+</html>
