@@ -60,11 +60,12 @@
         </h1>
         <p class="subtitle">AI/ML • .NET • Unity</p>
 
-        <p class="highlight">
-          I build practical software products and research-driven prototypes. Recently, I worked on real-time
-          surveillance & threat detection (YOLO + VideoMAE), event scheduling/notification systems in C#/.NET,
-          and Unity game development.
-        </p>
+       <p class="highlight">
+  I’m Berkay, a Full-Stack Developer specializing in backend systems, AI-powered applications, and distributed architectures. 
+  I build .NET and Python-based systems, work with MVC architectures, and develop intelligent solutions using machine learning, 
+  RAG pipelines, and LLM integrations.
+</p>
+
 
         <div class="hero-cta">
           <a
@@ -90,8 +91,9 @@
 
         <div class="quick-badges" aria-label="Highlights">
           <span class="badge"><i class="fa-solid fa-location-dot"></i> İzmir, Türkiye</span>
-          <span class="badge"><i class="fa-solid fa-shield-halved"></i> Cyber Security Club</span>
-          <span class="badge"><i class="fa-solid fa-bolt"></i> Real-time AI</span>
+          <span class="badge"><i class="fa-solid fa-code"></i> Full-Stack Developer</span>
+<span class="badge"><i class="fa-solid fa-flask"></i> Applied AI Systems</span>
+
         </div>
       </div>
 
@@ -100,52 +102,156 @@
       </div>
     </header>
 
-    <!-- Skills -->
-    <section id="skills" class="section skills">
-      <div class="section-head">
-        <h2>Technical Expertise</h2>
-        <p>Core tools I use to deliver production-ready work.</p>
+   <!-- Skills -->
+<!-- Skills -->
+<!-- VANTA (ONLY Skills) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.dots.min.js"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const el = document.getElementById("skills-vanta");
+    if (!el) return;
+
+    VANTA.DOTS({
+      el: el,
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.0,
+      minWidth: 200.0,
+      scale: 1.0,
+      scaleMobile: 1.0,
+      color: 0x651777,         // mor
+      color2: 0x20ff90,        // neon yeşil
+      backgroundColor: 0x050505,
+      size: 3.5,
+      spacing: 26.0,
+      showLines: false
+    });
+  });
+</script>
+
+<!-- Skills -->
+<section id="skills" class="section skills">
+  <!-- VANTA background -->
+  <div id="skills-vanta" aria-hidden="true"></div>
+
+  <div class="skills-inner">
+    <div class="section-head">
+      <h2>Technical Skills</h2>
+      <p>Software • AI/ML • Embedded/WSN • Blockchain • LLM/RAG</p>
+    </div>
+
+    <div class="skills-grid">
+
+      <div class="skill-card reveal">
+        <i class="fas fa-code"></i>
+        <h3>Programming Languages</h3>
+        <p>Java, Python, JavaScript, C, C++, C#, SQL, HTML/CSS, PHP</p>
       </div>
 
-      <div class="skills-grid">
-        <div class="skill-card reveal">
-          <i class="fas fa-code"></i>
-          <h3>Programming Languages</h3>
-          <p>Java, C, C++, C#, Python, JavaScript, PHP</p>
-        </div>
-
-        <div class="skill-card reveal">
-          <i class="fas fa-window-restore"></i>
-          <h3>Frontend Development</h3>
-          <p>HTML, CSS, Responsive Design, JavaScript</p>
-        </div>
-
-        <div class="skill-card reveal">
-          <i class="fas fa-desktop"></i>
-          <h3>Desktop & Web Frameworks</h3>
-          <p>Visual Studio, .NET, ASP.NET MVC, WinForms, Unity, MATLAB</p>
-        </div>
-
-        <div class="skill-card reveal">
-          <i class="fas fa-database"></i>
-          <h3>Database & Tools</h3>
-          <p>MySQL, SQLite, Git, Microsoft Office</p>
-        </div>
-
-        <div class="skill-card reveal">
-          <i class="fas fa-brain"></i>
-          <h3>AI & Machine Learning</h3>
-          <p>PyTorch, YOLOv8–v12, OpenCV, VideoMAE</p>
-        </div>
-
-        <div class="skill-card reveal">
-          <i class="fas fa-sitemap"></i>
-          <h3>Computer Science Fundamentals</h3>
-          <p>Data Structures & Algorithms, OOP Principles</p>
-        </div>
+      <div class="skill-card reveal">
+        <i class="fas fa-layer-group"></i>
+        <h3>Frameworks & App Development</h3>
+        <p>React.js, Flask, .NET, ASP.NET, ASP.NET Core, WinForms</p>
       </div>
-    </section>
 
+      <div class="skill-card reveal">
+        <i class="fas fa-plug"></i>
+        <h3>Backend & APIs</h3>
+        <p>
+          RESTful APIs, API integration, multithreading,
+          authentication & role-based access control, MVC architecture
+        </p>
+      </div>
+
+      <div class="skill-card reveal">
+        <i class="fas fa-database"></i>
+        <h3>Databases & Cloud</h3>
+        <p>PostgreSQL, SQL, SQLite, Firebase, database design</p>
+      </div>
+
+      <div class="skill-card reveal">
+        <i class="fas fa-microchip"></i>
+        <h3>WSN / IoT Simulation & Embedded</h3>
+        <p>
+          Contiki-NG, Cooja, RPL/UDP communication,
+          Energest-based energy monitoring, log-driven evaluation
+        </p>
+      </div>
+
+      <div class="skill-card reveal">
+        <i class="fas fa-link"></i>
+        <h3>Lightweight Blockchain for WSN</h3>
+        <p>
+          Merkle Tree batching, adaptive block creation
+          (energy / traffic / security-aware),
+          data integrity, replay & tamper attack handling
+        </p>
+      </div>
+
+      <div class="skill-card reveal">
+        <i class="fas fa-brain"></i>
+        <h3>AI / Machine Learning</h3>
+        <p>
+          PyTorch, TensorFlow, YOLO, OpenCV,
+          computer vision, deep learning
+        </p>
+      </div>
+
+      <div class="skill-card reveal">
+        <i class="fas fa-robot"></i>
+        <h3>LLM & RAG Systems</h3>
+        <p>
+          Document parsing & cleaning, chunking,
+          embeddings (Sentence-Transformers),
+          FAISS vector search, retrieval gating,
+          prompt design, LLM API integration
+        </p>
+      </div>
+
+      <div class="skill-card reveal">
+        <i class="fas fa-network-wired"></i>
+        <h3>CNN & Neural Networks</h3>
+        <p>
+          Convolutional Neural Networks (CNN),
+          neural network architectures,
+          feature extraction, training & evaluation,
+          overfitting prevention, hyperparameter tuning,
+          feature map visualization
+        </p>
+      </div>
+
+      <div class="skill-card reveal">
+        <i class="fas fa-rocket"></i>
+        <h3>ML Engineering</h3>
+        <p>
+          Data analysis, predictive modeling (Python),
+          model deployment, real-time inference,
+          evaluation & error analysis
+        </p>
+      </div>
+
+      <div class="skill-card reveal">
+        <i class="fas fa-gamepad"></i>
+        <h3>Game Development</h3>
+        <p>
+          Unity (2D/3D), C# scripting, AI mechanics,
+          physics system, UI/UX, animation,
+          TextMesh Pro, NavMesh, particle systems
+        </p>
+      </div>
+
+      <div class="skill-card reveal">
+        <i class="fas fa-code-branch"></i>
+        <h3>Tools & Workflow</h3>
+        <p>Git, GitHub, Agile methodology, project planning & documentation</p>
+      </div>
+
+    </div>
+  </div>
+</section>
     <!-- Experience -->
     <section id="experience" class="section experience">
       <div class="section-head">
@@ -178,220 +284,464 @@
             </ul>
           </div>
         </article>
+
+        <article class="timeline-item reveal">
+  <div class="timeline-dot" aria-hidden="true"></div>
+  <div class="timeline-card">
+    <h3>Researcher — ShielDir (AI-Powered Threat Detection)</h3>
+    <p class="meta">2025 • 14th International Symposium • Coimbra - Portugal</p>
+    <ul>
+      <li>Conducted research on signal-based detection and AI-driven threat analysis in surveillance systems.</li>
+      <li>Studied behavior recognition and object selection using deep learning models (YOLO, VideoMAE).</li>
+      <li>Presented research findings and system architecture at the 14th International Symposium.</li>
+    </ul>
+  </div>
+</article>
+
+
       </div>
     </section>
 
-    <!-- Projects -->
-    <section id="projects" class="section projects">
-      <div class="section-head">
-        <h2>Projects</h2>
-        <p>Click a project to expand details, media, and links.</p>
+      <!-- Projects -->
+      <section id="projects" class="section projects">
+        <div class="section-head">
+          <h2>Projects</h2>
+          <p>Click a project to expand details, media, and links.</p>
+        </div>
+
+        <h3 class="category-heading">AI & Machine Learning</h3>
+
+        <article class="project-card" data-expandable>
+          <header class="project-header">
+            <div>
+              <h3>ShielDir: AI-Powered Threat Detection</h3>
+              <div class="chip-row">
+                <span class="chip">YOLOv8–v12</span>
+                <span class="chip">VideoMAE</span>
+                <span class="chip">Firebase</span>
+              </div>
+            </div>
+            <button class="expand-btn" type="button" aria-label="Expand project">Details</button>
+          </header>
+
+          <div class="project-info">
+            <p>
+              This team project focused on developing an intelligent surveillance system that leverages real-time
+              weapon detection and human behavior analysis to improve public safety. My role involved training and
+              evaluating object detection models (YOLOv8–v12) using custom-labeled CCTV datasets and
+              implementing a VideoMAE-based architecture for suspicious behavior recognition. I integrated these
+              models into a modular pipeline and built a mobile-friendly notification system with Firebase to
+              deliver alerts instantly.
+            </p>
+            <a href="https://github.com/BerkayArdaa/ShielDir" target="_blank" rel="noopener">🔗 View on GitHub</a>
+            <br /><br />
+
+            <div class="project-video">
+              <video controls preload="metadata">
+                <source src="videos/v1.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+
+            <div class="image-gallery" aria-label="Project images">
+              <img src="images/PhoneShieldir.jpg" alt="Mobile UI of ShielDir" loading="lazy" />
+              <img src="images/posterShieldir.png" alt="ShielDir Academic Poster" loading="lazy" />
+              <img src="images/ShieldirTeam.jpg" alt="ShielDir Team Presentation" loading="lazy" />
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-expandable>
+          <header class="project-header">
+            <div>
+              <h3>Smart Wildfire Management</h3>
+              <div class="chip-row">
+                <span class="chip">Random Forest</span>
+                <span class="chip">Thermal/Drone</span>
+                <span class="chip">Bio+AI</span>
+              </div>
+            </div>
+            <button class="expand-btn" type="button" aria-label="Expand project">Details</button>
+          </header>
+
+          <div class="project-info">
+            <p>
+              This interdisciplinary research project explores how artificial intelligence and bioengineering can
+              be combined to create fire-resistant forest ecosystems. As part of a multidisciplinary team, I
+              contributed to an early-warning system that analyzes environmental and vegetation data to detect
+              wildfire risks using Random Forest models.
+            </p>
+            <p>
+              We also proposed integrating AI-based risk analysis with genetically engineered tree species that
+              exhibit fire-resilient properties, plus a monitoring infrastructure using thermal cameras and drone
+              surveillance.
+            </p>
+            <a href="https://github.com/BerkayArdaa/Feng497-BioAi" target="_blank" rel="noopener">🔗 View on GitHub</a>
+            <br /><br />
+
+            <div class="image-gallery" aria-label="Project images">
+              <img src="images/bio1.jpg" alt="AI-based Fire Detection Concept" loading="lazy" />
+              <img src="images/bio2.jpg" alt="Bioengineered Forest Visualization" loading="lazy" />
+            </div>
+          </div>
+        </article>
+        <article class="project-card" data-expandable>
+  <header class="project-header">
+    <div>
+      <h3>Favorite Book QA: LLM-Powered RAG System</h3>
+      <div class="chip-row">
+        <span class="chip">LLM</span>
+        <span class="chip">RAG</span>
+        <span class="chip">FAISS</span>
+        <span class="chip">Sentence-Transformers</span>
       </div>
+    </div>
+    <button class="expand-btn" type="button">Details</button>
+  </header>
 
-      <h3 class="category-heading">AI & Machine Learning</h3>
+  <div class="project-info">
+    <p>
+      Built a Retrieval-Augmented Generation (RAG) system that answers questions strictly from a book’s content.
+      The pipeline parses and cleans documents, chunks text, creates embeddings (Sentence-Transformers),
+      stores vectors in FAISS, and retrieves top context passages for the LLM. Includes retrieval gating to
+      reduce hallucinations and improve answer faithfulness.
+    </p>
 
-      <article class="project-card" data-expandable>
-        <header class="project-header">
-          <div>
-            <h3>ShielDir: AI-Powered Threat Detection</h3>
-            <div class="chip-row">
-              <span class="chip">YOLOv8–v12</span>
-              <span class="chip">VideoMAE</span>
-              <span class="chip">Firebase</span>
+    <ul>
+      <li>📄 PDF/Text parsing, cleaning, and chunking (overlap-based)</li>
+      <li>🧠 Embeddings with Sentence-Transformers + FAISS vector search</li>
+      <li>🧭 Retrieval gating for WHY/HOW style queries and relevance control</li>
+      <li>✅ Prompting strategy: “Answer only using retrieved context”</li>
+    </ul>
+
+    <!-- İstersen link ekle -->
+    <a href="https://github.com/BerkayArdaa/RAG_System_For_Favorite_Book" target="_blank" rel="noopener">🔗 View on GitHub</a> -->
+
+   
+  </div>
+</article>
+        <h3 class="category-heading">Software Applications</h3>
+
+        <article class="project-card" data-expandable>
+          <header class="project-header">
+            <div>
+              <h3>VirtualEvent Management System</h3>
+              <div class="chip-row">
+                <span class="chip">C# WinForms</span>
+                <span class="chip">ASP.NET MVC</span>
+                <span class="chip">SQL</span>
+              </div>
+            </div>
+            <button class="expand-btn" type="button" aria-label="Expand project">Details</button>
+          </header>
+
+          <div class="project-info">
+            <p>
+              Developed a comprehensive event scheduling and notification platform using C# (WinForms) and
+              ASP.NET MVC, integrated with an SQL database. Implemented key features such as user registration,
+              role-based access control (admin/staff/user), real-time event editing, and automated notification
+              alerts.
+            </p>
+            <ul>
+              <li>👤 Role-based user registration (Admin, Staff, Participant)</li>
+              <li>📅 Event creation, editing, and scheduling</li>
+              <li>🔔 Notifications for updated/canceled events</li>
+              <li>📈 Filters and sorting for event tracking</li>
+            </ul>
+            <a href="https://github.com/BerkayArdaa/Virtual-Event-Application" target="_blank" rel="noopener">🔗 View on GitHub</a>
+            <br /><br />
+            <div class="image-gallery" aria-label="Project images">
+              <img src="images/virtualEvent2.png" alt="Virtual Event Logo" loading="lazy" />
+              <img src="images/VirtualEvent.jpg" alt="Virtual Event screenshot" loading="lazy" />
             </div>
           </div>
-          <button class="expand-btn" type="button" aria-label="Expand project">Details</button>
-        </header>
+        </article>
 
-        <div class="project-info">
-          <p>
-            This team project focused on developing an intelligent surveillance system that leverages real-time
-            weapon detection and human behavior analysis to improve public safety. My role involved training and
-            evaluating object detection models (YOLOv8–v12) using custom-labeled CCTV datasets and
-            implementing a VideoMAE-based architecture for suspicious behavior recognition. I integrated these
-            models into a modular pipeline and built a mobile-friendly notification system with Firebase to
-            deliver alerts instantly.
-          </p>
-          <a href="https://github.com/ahmetalpsamur/ShielDir" target="_blank" rel="noopener">🔗 View on GitHub</a>
-          <br /><br />
-
-          <div class="project-video">
-            <video controls preload="metadata">
-              <source src="videos/v1.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
-
-          <div class="image-gallery" aria-label="Project images">
-            <img src="images/PhoneShieldir.jpg" alt="Mobile UI of ShielDir" loading="lazy" />
-            <img src="images/posterShieldir.png" alt="ShielDir Academic Poster" loading="lazy" />
-            <img src="images/ShieldirTeam.jpg" alt="ShielDir Team Presentation" loading="lazy" />
-          </div>
-        </div>
-      </article>
-
-      <article class="project-card" data-expandable>
-        <header class="project-header">
-          <div>
-            <h3>Smart Wildfire Management</h3>
-            <div class="chip-row">
-              <span class="chip">Random Forest</span>
-              <span class="chip">Thermal/Drone</span>
-              <span class="chip">Bio+AI</span>
+        <article class="project-card" data-expandable>
+          <header class="project-header">
+            <div>
+              <h3>EasyAssign – Coding Assignment Evaluation Tool</h3>
+              <div class="chip-row">
+                <span class="chip">Windows App</span>
+                <span class="chip">Automation</span>
+                <span class="chip">Multi-language</span>
+              </div>
             </div>
+            <button class="expand-btn" type="button" aria-label="Expand project">Details</button>
+          </header>
+
+          <div class="project-info">
+            <p>
+              EasyAssign is a lightweight Windows application developed to help educators evaluate programming
+              assignments efficiently. It supports multiple languages and provides a structured workflow from
+              submission to grading.
+            </p>
+            <ul>
+              <li>📁 Automatic ZIP processing from student submissions</li>
+              <li>💻 Compilation and execution</li>
+              <li>📊 Output comparison against expected results</li>
+              <li>🛠️ Error reporting for compile/runtime issues</li>
+            </ul>
+            <a href="https://github.com/BerkayArdaa/EasyAssign-Automated-Coding-Assignment-Evaluation-Tool" target="_blank" rel="noopener">🔗 View on GitHub</a>
           </div>
-          <button class="expand-btn" type="button" aria-label="Expand project">Details</button>
-        </header>
+        </article>
 
-        <div class="project-info">
-          <p>
-            This interdisciplinary research project explores how artificial intelligence and bioengineering can
-            be combined to create fire-resistant forest ecosystems. As part of a multidisciplinary team, I
-            contributed to an early-warning system that analyzes environmental and vegetation data to detect
-            wildfire risks using Random Forest models.
-          </p>
-          <p>
-            We also proposed integrating AI-based risk analysis with genetically engineered tree species that
-            exhibit fire-resilient properties, plus a monitoring infrastructure using thermal cameras and drone
-            surveillance.
-          </p>
-          <a href="https://github.com/BerkayArdaa/Feng497-BioAi" target="_blank" rel="noopener">🔗 View on GitHub</a>
-          <br /><br />
+        <h3 class="category-heading">Computer Games</h3>
 
-          <div class="image-gallery" aria-label="Project images">
-            <img src="images/bio1.jpg" alt="AI-based Fire Detection Concept" loading="lazy" />
-            <img src="images/bio2.jpg" alt="Bioengineered Forest Visualization" loading="lazy" />
-          </div>
-        </div>
-      </article>
+      
+          <article class="project-card" data-expandable>
+  <header class="project-header">
+    <div>
+      <h3>2D Action-Adventure Game — Teracity Internship Project</h3>
+      <div class="chip-row">
+        <span class="chip">Unity</span>
+        <span class="chip">C#</span>
+        <span class="chip">2D Game</span>
+        <span class="chip">Enemy AI</span>
+        <span class="chip">Inventory System</span>
+        <span class="chip">Wave System</span>
+      </div>
+    </div>
+    <button class="expand-btn" type="button" aria-label="Expand project">
+      Details
+    </button>
+  </header>
 
-      <h3 class="category-heading">Software Applications</h3>
+  <div class="project-info">
+    <p>
+      This project is a <b>2D action-adventure game</b> developed during my internship at
+      <b>Teracity Software Technologies</b>. The goal was to design a playable core game loop
+      while applying clean code practices and object-oriented design principles.
+    </p>
 
-      <article class="project-card" data-expandable>
-        <header class="project-header">
-          <div>
-            <h3>VirtualEvent Management System</h3>
-            <div class="chip-row">
-              <span class="chip">C# WinForms</span>
-              <span class="chip">ASP.NET MVC</span>
-              <span class="chip">SQL</span>
+    <ul>
+      <li>
+        <b>Character Movement & Combat:</b> Implemented smooth 2D movement and combat mechanics,
+        including melee (sword) and ranged (bow) weapon systems.
+      </li>
+      <li>
+        <b>Enemy AI:</b> Designed multiple enemy types with proximity-based behaviors and attack logic.
+      </li>
+      <li>
+        <b>Wave-Based Spawning:</b> Enemies spawn in increasing waves, with a boss encounter triggered
+        after every 10 kills.
+      </li>
+      <li>
+        <b>Inventory System:</b> Fully functional inventory allowing players to collect, use, and drop items.
+      </li>
+      <li>
+        <b>User Interface:</b> Developed optimized UI elements including score tracking, wave indicators,
+        inventory display, and health feedback.
+      </li>
+    </ul>
+
+    <p>
+      The project focuses on maintainable architecture, reusable components, and performance-aware
+      gameplay systems, serving as a solid foundation for future extensions such as new levels or enemies.
+    </p>
+
+    <p>
+      <a
+        href="https://github.com/BerkayArdaa/Teracity_Game_Project"
+        target="_blank"
+        rel="noopener"
+      >
+        🔗 View on GitHub
+      </a>
+    </p>
+<div class="project-video">
+              <video controls muted preload="metadata">
+                <source src="videos/v2.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
             </div>
-          </div>
-          <button class="expand-btn" type="button" aria-label="Expand project">Details</button>
-        </header>
-
-        <div class="project-info">
-          <p>
-            Developed a comprehensive event scheduling and notification platform using C# (WinForms) and
-            ASP.NET MVC, integrated with an SQL database. Implemented key features such as user registration,
-            role-based access control (admin/staff/user), real-time event editing, and automated notification
-            alerts.
-          </p>
-          <ul>
-            <li>👤 Role-based user registration (Admin, Staff, Participant)</li>
-            <li>📅 Event creation, editing, and scheduling</li>
-            <li>🔔 Notifications for updated/canceled events</li>
-            <li>📈 Filters and sorting for event tracking</li>
-          </ul>
-          <a href="https://github.com/BerkayArdaa/Virtual-Event-Application" target="_blank" rel="noopener">🔗 View on GitHub</a>
-          <br /><br />
-          <div class="image-gallery" aria-label="Project images">
-            <img src="images/virtualEvent2.png" alt="Virtual Event Logo" loading="lazy" />
-            <img src="images/VirtualEvent.jpg" alt="Virtual Event screenshot" loading="lazy" />
-          </div>
-        </div>
-      </article>
-
-      <article class="project-card" data-expandable>
-        <header class="project-header">
-          <div>
-            <h3>EasyAssign – Coding Assignment Evaluation Tool</h3>
-            <div class="chip-row">
-              <span class="chip">Windows App</span>
-              <span class="chip">Automation</span>
-              <span class="chip">Multi-language</span>
+            <div class="image-gallery" aria-label="Project images">
+              <img src="images/Teracityicon.png" alt="Game screenshot" loading="lazy" />
             </div>
-          </div>
-          <button class="expand-btn" type="button" aria-label="Expand project">Details</button>
-        </header>
+    
+  </div>
+</article>
 
-        <div class="project-info">
-          <p>
-            EasyAssign is a lightweight Windows application developed to help educators evaluate programming
-            assignments efficiently. It supports multiple languages and provides a structured workflow from
-            submission to grading.
-          </p>
-          <ul>
-            <li>📁 Automatic ZIP processing from student submissions</li>
-            <li>💻 Compilation and execution</li>
-            <li>📊 Output comparison against expected results</li>
-            <li>🛠️ Error reporting for compile/runtime issues</li>
-          </ul>
-          <a href="https://github.com/ozgeozerr/CE316-PROJECT" target="_blank" rel="noopener">🔗 View on GitHub</a>
-        </div>
-      </article>
+    <article class="project-card" data-expandable>
+  <header class="project-header">
+    <div>
+      <h3>Kormos: The Beginning — Supernatural Detective Shooter</h3>
+      <div class="chip-row">
+        <span class="chip">Unity URP</span>
+        <span class="chip">C#</span>
+        <span class="chip">3D Shooter</span>
+        <span class="chip">Enemy AI</span>
+        <span class="chip">Boss Design</span>
+        <span class="chip">Time Mechanics</span>
+      </div>
+    </div>
+    <button class="expand-btn" type="button" aria-label="Expand project">
+      Details
+    </button>
+  </header>
 
-      <h3 class="category-heading">Computer Games</h3>
+  <div class="project-info">
+    <p>
+      <b>Kormos: The Beginning</b> is a 3D supernatural detective shooter developed for the
+      <b>SE320 – Introduction to Computer Games</b> course. The game blends psychological
+      storytelling with mechanics-driven gameplay, focusing on time manipulation, teleportation,
+      and strategic combat.
+    </p>
 
-      <article class="project-card" data-expandable>
-        <header class="project-header">
-          <div>
-            <h3>2D Adventure Game with Unity</h3>
-            <div class="chip-row">
-              <span class="chip">Unity</span>
-              <span class="chip">C#</span>
-              <span class="chip">Gameplay Systems</span>
-            </div>
-          </div>
-          <button class="expand-btn" type="button" aria-label="Expand project">Details</button>
-        </header>
+    <p>
+      The player controls <b>Kormos</b>, a detective suffering from amnesia who dives into his own
+      subconscious to recover lost memories and confront manifestations of his past.
+    </p>
 
-        <div class="project-info">
-          <p>
-            During my internship at Teracity, I developed a complete 2D action-adventure game using Unity and
-            C#. This included movement, combat, inventory management, wave-based spawning, boss battles,
-            weapon switching (sword/bow), and UI with TextMesh Pro.
-          </p>
-          <div class="project-video">
-            <video controls muted preload="metadata">
-              <source src="videos/v2.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
-          <div class="image-gallery" aria-label="Project images">
-            <img src="images/Teracityicon.png" alt="Game screenshot" loading="lazy" />
-          </div>
-        </div>
-      </article>
+    <ul>
+      <li>
+        <b>Enemy AI & Boss Design:</b> Implemented multiple enemy types including Baby Rats and Priests,
+        as well as all boss encounters (Rat King, Zangoc, Cutie Devil).
+      </li>
+      <li>
+        <b>Core Mechanics:</b> Time slow, teleportation & stun, clone (time remnant) system,
+        dash in 8 directions, and ranged combat.
+      </li>
+      <li>
+        <b>Level Design Contribution:</b> Designed and implemented the final level with boss encounters.
+      </li>
+      <li>
+        <b>Iterative Game Design:</b> Mechanics refined based on feedback — procedural generation and
+        grappling hook removed in favor of teleportation and time-based abilities.
+      </li>
+    </ul>
 
-      <article class="project-card" data-expandable>
-        <header class="project-header">
-          <div>
-            <h3>Kormos – Supernatural Detective Adventure</h3>
-            <div class="chip-row">
-              <span class="chip">Unity</span>
-              <span class="chip">3D</span>
-              <span class="chip">Enemy AI</span>
-            </div>
-          </div>
-          <button class="expand-btn" type="button" aria-label="Expand project">Details</button>
-        </header>
+    <p>
+      The final build includes a tutorial level, two playable levels, multiple enemy types,
+      three bosses, and a minimalist UI focused on clarity and immersion.
+    </p>
 
-        <div class="project-info">
-          <p>
-            Kormos is a 3D adventure game where players control a supernatural detective with abilities like
-            clone summoning and time manipulation. Enemies include close-range rats and ranged priests, ending
-            with a Rat King boss encounter.
-          </p>
-          <div class="project-video">
-            <video controls muted preload="metadata">
-              <source src="videos/v4.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
-        </div>
-      </article>
-    </section>
+    <p>
+      <a
+        href="https://github.com/BerkayArdaa/Kormos-Supernatural-Detective-Adventure-Game"
+        target="_blank"
+        rel="noopener"
+      >
+        🔗 View on GitHub
+      </a>
+    </p>
+
+    <!-- Görselleri eklemek istersen -->
+    <!--
+    <div class="image-gallery">
+      <img src="images/kormos1.jpg" alt="Kormos Gameplay">
+      <img src="images/kormos2.jpg" alt="Boss Fight">
+      <img src="images/kormos3.jpg" alt="Time Manipulation">
+    </div>
+    -->
+
+    <!-- Video varsa -->
+    <!--
+    <div class="project-video">
+      <video controls muted preload="metadata">
+        <source src="videos/kormos.mp4" type="video/mp4" />
+      </video>
+    </div>
+    -->
+  </div>
+</article>
+
+     <article class="project-card" data-expandable>
+  <header class="project-header">
+    <div>
+      <h3>Tower Defense Prototype</h3>
+      <div class="chip-row">
+        <span class="chip">Unity 2022.3 (LTS)</span>
+        <span class="chip">C#</span>
+        <span class="chip">NavMesh</span>
+        <span class="chip">Billboard 2D-in-3D</span>
+        <span class="chip">Wave System</span>
+      </div>
+    </div>
+    <button class="expand-btn" type="button" aria-label="Expand project">Details</button>
+  </header>
+
+  <div class="project-info">
+    <p>
+      A playable Tower Defense prototype developed for a case study. The game runs in a 3D environment
+      while using 2D sprite characters through a billboard technique. Enemies follow a defined path using
+      NavMesh and attempt to destroy the base. The project focuses on a clean and extendable gameplay loop
+      with wave progression, boss waves, scoring, and skill-based mechanics.
+    </p>
+
+    <ul>
+      <li><b>Core loop:</b> enemies spawn in waves, follow a path, and attack the base at the end.</li>
+      <li><b>Wave system:</b> UI-based wave tracking, 6s inter-wave wait, and <b>early start</b> with <b>F</b>.</li>
+      <li><b>Boss waves:</b> bosses spawn on <b>5th / 10th / 15th</b> waves, then normal flow continues.</li>
+      <li><b>Scoring & skills:</b> +10 score per kill; at 200 score you can use <b>Heal (E)</b> and <b>Arrow Rain (Q)</b> with cooldown + UI.</li>
+      <li><b>Player:</b> WASD movement, dash with Shift, and auto-attack the nearest enemy (melee/ranged-ready).</li>
+      <li><b>Performance tests:</b> stress-tested with high enemy counts (200–2000 animated enemies) while keeping smooth FPS.</li>
+    </ul>
+
+    <p>
+      <a href="https://github.com/BerkayArdaa/TD_CASE_KFA" target="_blank" rel="noopener">
+        🔗 View on GitHub
+      </a>
+    </p>
+
+    <div class="image-gallery" aria-label="TD_CASE_KFA images">
+      <img src="images/td1.jpeg" alt="TD_CASE_KFA - Gameplay 1" loading="lazy">
+      <img src="images/td2.jpeg" alt="TD_CASE_KFA - Gameplay 2" loading="lazy">
+      <img src="images/td3.jpeg" alt="TD_CASE_KFA - Enemy AI / Path Follow" loading="lazy">
+      <img src="images/td4.jpeg" alt="TD_CASE_KFA - Tower Placement / Combat" loading="lazy">
+    </div>
+  </div>
+</article>
+
+
+        <h3 class="category-heading">WSN / Embedded / Blockchain</h3>
+
+
+
+<!-- Lightweight Blockchain for WSN -->
+<article class="project-card" data-expandable>
+  <header class="project-header">
+    <div>
+      <h3>Energy-Aware Lightweight Blockchain for WSN (Contiki-NG + Cooja)</h3>
+      <div class="chip-row">
+        <span class="chip">Contiki-NG</span>
+        <span class="chip">Cooja</span>
+        <span class="chip">RPL/UDP</span>
+        <span class="chip">Merkle Tree</span>
+        <span class="chip">Energy-Aware</span>
+      </div>
+    </div>
+    <button class="expand-btn" type="button">Details</button>
+  </header>
+
+  <div class="project-info">
+    <p>
+      Designed and evaluated a lightweight blockchain-based integrity framework for Wireless Sensor Networks
+      using Contiki-NG and Cooja. The system batches sensor transactions with Merkle trees and performs
+      adaptive block creation based on real-time conditions such as energy level, traffic load, and security
+      alerts—reducing overhead while maintaining strong data integrity.
+    </p>
+
+    <ul>
+      <li>🔋 Energest-based energy monitoring (CPU/LPM/TX/RX) and log-driven evaluation</li>
+      <li>🌲 Merkle Tree batching to minimize on-chain storage and computation</li>
+      <li>⚙️ Adaptive automation layer for block commits (energy/traffic/security-aware)</li>
+      <li>🛡️ Security handling: replay and tamper attack detection & response</li>
+      <li>📡 WSN communication via RPL/UDP with simulation-driven metrics</li>
+    </ul>
+
+    <!-- İstersen link ekle -->
+    <a href="https://github.com/BerkayArdaa/Automation-Based-Lightweight-Blockchain-for-WSN" target="_blank" rel="noopener">🔗 View on GitHub</a>
+
+    <div class="image-gallery" aria-label="Project images">
+      <img src="images/wsnp1.jpeg" alt="Cooja topology and nodes" loading="lazy" />
+      <img src="images/wsnp2.jpeg" alt="Energy logs / evaluation charts" loading="lazy" />
+      <img src="images/wsnp3.jpeg" alt="Energy logs / evaluation charts" loading="lazy" />
+    </div>
+  </div>
+</article>
+
+      </section>
 
     <!-- Contact -->
     <section id="contact" class="section contact">
@@ -446,5 +796,8 @@
       <img class="lightbox-content" id="lightbox-img" alt="Preview" />
       <button class="nav-arrow next-btn" type="button" aria-label="Next" onclick="changeImage(1)">&#10095;</button>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+<script src="script.js"></script>
   </body>
 </html>

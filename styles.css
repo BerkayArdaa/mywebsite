@@ -678,3 +678,116 @@ a {
     padding: 0.6rem 0.4rem;
   }
 }
+/* Neon mouse spotlight */
+.cursor-glow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 600px;
+  height: 600px;
+  pointer-events: none;
+  z-index: 0;
+
+  background: radial-gradient(
+    circle at center,
+    rgba(168, 85, 247, 0.35),   /* neon mor */
+    rgba(34, 197, 94, 0.18) 40%, /* neon yeşil */
+    rgba(0, 0, 0, 0.75) 70%
+  );
+
+  filter: blur(40px);
+  transform: translate(-50%, -50%);
+  transition: background 0.2s ease;
+}
+
+/* Performans + erişilebilirlik */
+@media (prefers-reduced-motion: reduce) {
+  .cursor-glow {
+    display: none;
+  }
+}
+/* ===== VANTA DOTS (ONLY SKILLS) ===== */
+
+#skills {
+  position: relative;
+  overflow: hidden;
+}
+
+/* senin mevcut .skills { background: var(--bg-2); } bunu ez */
+.skills {
+  background: transparent !important;
+}
+
+/* VANTA layer */
+#skills-vanta {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+/* içerik üstte */
+#skills .skills-inner {
+  position: relative;
+  z-index: 2;
+}
+
+/* okunaklı kartlar */
+#skills .skill-card {
+  background: rgba(12, 14, 20, 0.78);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* (isteğe bağlı) skills üstüne hafif koyu overlay — dots daha “premium” görünür */
+#skills::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: radial-gradient(circle at 20% 10%, rgba(123,40,179,0.14), transparent 45%),
+              radial-gradient(circle at 80% 20%, rgba(39,174,96,0.10), transparent 50%);
+  pointer-events: none;
+}
+/* ===== PROJECTS + CONTACT BACKGROUND ===== */
+
+#projects {
+  position: relative;
+  overflow: hidden;
+}
+
+/* default bg’leri ez */
+.projects {
+  background: transparent !important;
+}
+
+#projects-vanta {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+/* içerik üstte */
+.projects-inner,
+.contact-inner {
+  position: relative;
+  z-index: 2;
+}
+
+/* readability için hafif overlay */
+#projects::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background:
+    radial-gradient(circle at 15% 20%, rgba(123,40,179,0.10), transparent 45%),
+    radial-gradient(circle at 85% 30%, rgba(39,174,96,0.08), transparent 50%);
+  pointer-events: none;
+}
+
+/* kartlar biraz daha cam efekti */
+#projects .project-card,
+#contact .contact-card {
+  background: rgba(12, 14, 20, 0.82);
+  backdrop-filter: blur(6px);
+}
