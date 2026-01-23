@@ -301,7 +301,41 @@
 
       </div>
     </section>
+  <!-- p5.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js"></script>
 
+<!-- VANTA Topology -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.topology.min.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  if (!window.VANTA) {
+    console.error("VANTA yüklenmedi (vanta.topology.min.js bulunamadı).");
+    return;
+  }
+
+  if (!document.querySelector("#projects")) {
+    console.error("#projects elementi bulunamadı.");
+    return;
+  }
+
+  VANTA.TOPOLOGY({
+    el: "#projects",
+    mouseControls: true,
+    touchControls: true,
+    gyroControls: false,
+    minHeight: 200.0,
+    minWidth: 200.0,
+    scale: 1.0,
+    scaleMobile: 1.0,
+    color: 0xb32892,
+    backgroundAlpha: 0.0
+  });
+});
+</script>
+  
+
+  
       <!-- Projects -->
       <section id="projects" class="section projects">
         <div class="section-head">
